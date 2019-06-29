@@ -1,0 +1,23 @@
+package com.multiDb.postgres.repository;
+
+import java.util.List;
+
+import org.apache.ibatis.annotations.Select;
+
+import com.multiDb.domain.TestTableVo;
+
+public interface BdsTestMapper {
+	
+	@Select("select now()")
+	public String getTime();
+	
+	//인터페이스에 지정한 메서드명이 곧 맵퍼의 실행될 쿼리 문
+	public String getTimeMapper();
+	
+	//DB에 저장된 데이터를 확인
+	public List<TestTableVo> getTestTableList(); 
+	
+	//DB에 저장된 데이터를 확인
+	public List<TestTableVo> getSrchList(TestTableVo vo); 
+	
+}

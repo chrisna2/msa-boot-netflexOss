@@ -1,0 +1,43 @@
+package com.multiDb.domain;
+
+public class TestTableVo {
+	
+	private int idx;
+	private String test_string;
+	private String random_string;
+	private String test_date;
+	
+	@Override
+	public String toString() {
+		return "TestOneTableVo [idx=" + idx + ", test_string=" + test_string + ", rendom_string=" + random_string
+				+ ", test_date=" + test_date + "]";
+	}
+	public int getIdx() {
+		return idx;
+	}
+	public void setIdx(int idx) {
+		this.idx = idx;
+	}
+	public String getTest_string() {
+		return test_string;
+	}
+	public void setTest_string(String test_string) {
+		this.test_string = test_string;
+	}
+
+	public String getRandom_string() {
+		return random_string;
+	}
+
+	public void setRandom_string(String random_string) {
+		this.random_string = random_string;
+	}
+
+	public String getTest_date() {
+		return test_date;
+	}
+	public void setTest_date(String test_date) {
+		this.test_date = test_date;
+	}
+	
+}

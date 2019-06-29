@@ -1,0 +1,33 @@
+## default connection pool
+spring.datasource.hikari.connectionTimeout=20000
+spring.datasource.hikari.maximumPoolSize=5
+
+#Maria DB
+spring.maria.datasource.jdbc-url=jdbc:mariadb://localhost:3306/harang
+spring.maria.datasource.driver-class-name=org.mariadb.jdbc.Driver
+spring.maria.datasource.username=harang
+spring.maria.datasource.password=1111
+
+#Oracle DB
+spring.oracle.datasource.jdbc-url=jdbc:oracle:thin:@localhost:1521:orcl
+spring.oracle.datasource.driver-class-name=oracle.jdbc.OracleDriver
+spring.oracle.datasource.username=concept
+spring.oracle.datasource.password=nhk3516251
+
+## mybatis-mapper 설정
+mybatis.config-location=classpath:mybatis-config.xml
+mybatis.mapper-locations=classpath:mappers/**/*.xml
+
+## mybatis 실행 로그 확인
+logging.level.org.springframework=ERROR
+logging.level.com.prac.persistence.*=INFO
+logging.file=logs/spring-boot-logging.log
+
+## thymeleaf 설정
+spring.thymeleaf.cache=false
+
+## 화면 정적 자원 경로 셋팅 (CSS,JS 등등)
+spring.mvc.static-path-pattern=/static/**
+spring.resources.static-locations=classpath:/static/
+spring.resources.add-mappings=true 
+

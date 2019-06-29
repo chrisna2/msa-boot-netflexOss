@@ -1,0 +1,84 @@
+package com.multiDb.service.impl;
+
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.multiDb.domain.BookVo;
+import com.multiDb.domain.EmpVo;
+import com.multiDb.domain.TaskVo;
+import com.multiDb.domain.TestTableVo;
+import com.multiDb.maria.repository.BookMapper;
+import com.multiDb.oracle.repository.EmpMapper;
+import com.multiDb.postgres.repository.BdsTestMapper;
+import com.multiDb.service.MultiDbService;
+
+import lombok.extern.java.Log;
+
+@Log
+@Service
+public class MultiDbServiceImpl implements MultiDbService{
+
+	//Oracle
+	@Autowired
+	EmpMapper empMapper;
+	
+	//mariaDb
+	@Autowired
+	BookMapper BookMapper;
+	
+	//postgreSql
+	@Autowired
+	BdsTestMapper bdsTestMapper;
+	
+	@Override
+	public List<BookVo> bookInfo() {
+		return BookMapper.bookInfo();
+	}
+
+	@Override
+	public List<EmpVo> empInfo() {
+		return empMapper.empInfo();
+	}
+
+	@Override
+	public List<TestTableVo> getTestTableList() {
+		return bdsTestMapper.getTestTableList();
+	}
+
+	@Override
+	public List<TestTableVo> getTaskList() {
+		return bdsTestMapper.getTaskList();
+	}
+
+	@Override
+	public List<TestTableVo> getTaskList3() {
+		return bdsTestMapper.getTaskList3();
+	}
+
+	@Override
+	public TestTableVo getTaskInfo(int idx) {
+		return bdsTestMapper.getTaskInfo(idx);
+	}
+
+	@Override
+	public void runTask(Map<String,Object> map) {
+		
+		String taskInfoString = "";
+		
+		List<TaskVo> resultList =  bdsTestMapper.findByTaskId(map.get("task_id").toString());
+		
+		for(TaskVo i: resultList) {
+			taskInfoString += i.getTo_col()+"="+map.get(i.getFrom_col()).toString()+",";
+		}
+		
+		log.info("★taskInfoString : "+taskInfoString.substring(0,taskInfoString.length()-1));
+		log.info("☆paramList : "+map.toString());
+		log.info("★resultList : "+resultList.toString());
+		
+		//pk=1,to_random_string=e840c0ba31768303d56c1e650d6c0e2e,to_test_string=테스트 문자열1
+	}
+
+}

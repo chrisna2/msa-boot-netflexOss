@@ -1,0 +1,33 @@
+package com.multiDb.service.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.multiDb.domain.BookVo;
+import com.multiDb.domain.EmpVo;
+import com.multiDb.maria.repository.BookMapper;
+import com.multiDb.oracle.repository.EmpMapper;
+import com.multiDb.service.MultiDbService;
+
+@Service
+public class MultiDbServiceImpl implements MultiDbService{
+
+	@Autowired
+	EmpMapper empMapper;
+	
+	@Autowired
+	BookMapper BookMapper;
+	
+	@Override
+	public List<BookVo> bookInfo() {
+		return BookMapper.bookInfo();
+	}
+
+	@Override
+	public List<EmpVo> empInfo() {
+		return empMapper.empInfo();
+	}
+
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Cotent-Type" content="text/html; charset=UTF-8">
+<title>기업고객 조회</title>
+	<script src="/static/js/jquery-3.3.1.min.js"></script>
+	<script src="/static/js/jquery.toast.js"></script>
+    <link href="/static/css/bootstrap.css" rel="stylesheet" type="text/css">    
+    </head>
+    <body>  	
+		<br>
+		<table class="table table-bordered" style="width:1024px">
+			<tr>
+				<th>문자열</th>
+				<td><input type="text" id="test_string" name="test_string"></td>
+				<th>랜덤문자열</th>
+				<td><input type="text" id="random_string" name="random_string"></td>
+				<td><input type="button" id="srchText" value="검색"></td>
+			</tr>
+		</table>
+		<br>
+		<h4>검색결과</h4>
+		<br>
+		<table class="table table-striped table-bordered table-hover" id="dataTable" style="width:1024px">
+			<thead>
+				<tr>
+					<th>IDX</th>
+					<th>TO_TEST_STRING</th>
+					<th>TO_RANDOM_STRING</th>
+					<th>TASK 실행</th>
+				</tr>
+			</thead>
+			<tbody id="srchResult">
+				<tr class="odd gradeX" th:each="board:${list}">
+					<td th:text="${board.idx}"></td>
+					<td th:text="${board.test_string}"></td>
+					<td th:text="${board.random_string}"></td>
+					<td>
+						<input type="button" th:onclick="'javascript:goTaskIUD('+${board.idx}+')'" value="TASK실행"/>
+					</td>
+				</tr>	
+			</tbody>
+		</table>
+    </body>
+    <script type="text/javascript">
+    	$("#srchText").click(function(){
+    		$.getJSON("/board/gridTest/srch",
+    				  {
+    			       test_string:$("#test_string").val(),
+    			       random_string:$("#random_string").val()
+    				  },
+    				  function(data){
+    					  $("#srchResult tr").remove();
+    					  $(data).each(function(index, list){ 
+    						  $("#srchResult").append(
+    		                             "<tr class='odd gradeX'>"
+    		                             +"<td>"+list.idx+"</td>"
+    		                             +"<td>"+list.test_string+"</td>"
+    		                             +"<td>"+list.random_string+"</td>"
+    		                             +"</tr>");
+    					  });
+    				  }
+    		);
+		});
+    	function goTaskIUD(idx){
+			console.log(idx);   
+			location.href="/board/taskIUD?idx="+idx;
+    	}
+    	
+    </script>
+</html>

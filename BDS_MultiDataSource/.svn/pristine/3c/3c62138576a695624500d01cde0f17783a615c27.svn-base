@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Cotent-Type" content="text/html; charset=UTF-8">
+<title>Practice V2</title>
+</head>
+<body>
+	<h2>Spring Boot Practice V2</h2>
+	
+	<h3>#1. login (Spring Boot Security)</h3>
+	<table>
+		<tbody>
+			<tr>
+				<th colspan="2" align="center" th:text="${model}"></th>
+			</tr>
+			<tr>
+				<th align="left">아이디 : </th>
+				<td><input type="text" name="USR_ID" id="USR_ID"/></td>
+				<th rowspan="2" align="right"><input type="submit" id="login" value="로그인"></th>
+			</tr>
+			<tr>
+				<th align="left">비밀번호 : </th>
+				<td><input type="password" name="USR_PWD" id="USR_PWD"/></td>
+			</tr>
+		</tbody>
+	</table>
+	<h3>#2. multiple_datasource 호출 (JSON)</h3>
+	<ul>
+		<li><a href="/bookInfo">책정보 리스트(mariaDB)</a></li>
+		<li><a href="/empInfo">직원정보 리스트(oracle)</a></li>
+		<li><a href="/BdsTestInfo">테스트 테이블 리스트(PostgreSQL)</a></li>
+	</ul>
+	<h3>#3. aop 설정 & page 이동</h3>
+</body>
+</html>

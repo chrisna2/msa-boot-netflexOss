@@ -1,0 +1,10 @@
+package com.multiDb.maria.repository;
+
+import java.util.List;
+
+import com.multiDb.domain.BookVo;
+
+public interface BookMapper {
+	
+	public List<BookVo> bookInfo();
+}
