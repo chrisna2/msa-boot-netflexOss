@@ -599,3 +599,44 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
  java.lang.Thread.run(Thread.java:748)
+2019-06-30 09:44:09.993  INFO 4272 --- [main] c.tyn.bnk.MsaSa02BnkClient02Application  : No active profile set, falling back to default profiles: default
+2019-06-30 09:44:11.235  INFO 4272 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-30 09:44:11.235  INFO 4272 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-06-30 09:44:11.425  INFO 4272 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-06-30 09:44:11.522  WARN 4272 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-06-30 09:44:11.523  INFO 4272 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-06-30 09:44:11.531  INFO 4272 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@5854a18
+2019-06-30 09:44:12.808  WARN 4272 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-06-30 09:44:12.808  INFO 4272 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-06-30 09:44:13.530  INFO 4272 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-06-30 09:44:13.672  INFO 4272 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-06-30 09:44:13.673  INFO 4272 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-06-30 09:44:13.769  INFO 4272 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-06-30 09:44:13.769  INFO 4272 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-06-30 09:44:13.910  INFO 4272 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-06-30 09:44:14.117  INFO 4272 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-06-30 09:44:14.117  INFO 4272 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-06-30 09:44:14.118  INFO 4272 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-06-30 09:44:14.118  INFO 4272 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-06-30 09:44:14.118  INFO 4272 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-06-30 09:44:14.118  INFO 4272 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-06-30 09:44:14.118  INFO 4272 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-06-30 09:44:14.254  INFO 4272 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-06-30 09:44:14.257  INFO 4272 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2019-06-30 09:44:14.259  INFO 4272 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-06-30 09:44:14.262  INFO 4272 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1561855454261 with initial instances count: 2
+2019-06-30 09:44:14.266  INFO 4272 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1561855454266, current=UP, previous=STARTING]
+2019-06-30 09:44:14.267  WARN 4272 --- [main] c.n.discovery.InstanceInfoReplicator     : Ignoring onDemand update due to rate limiter
+2019-06-30 09:44:14.269  INFO 4272 --- [DiscoveryClient-InstanceInfoReplicator-0] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-06-30 09:44:14.308  INFO 4272 --- [main] c.tyn.bnk.MsaSa02BnkClient02Application  : Started MsaSa02BnkClient02Application in 5.505 seconds (JVM running for 6.287)
+2019-06-30 09:44:14.360  INFO 4272 --- [DiscoveryClient-InstanceInfoReplicator-0] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2019-06-30 09:44:14.367  INFO 4272 --- [DiscoveryClient-InstanceInfoReplicator-0] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-06-30 09:44:14.427  INFO 4272 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CONCEPT/concept:441c3d2e0d685e8ca73c66cfceef105a: registering service...
+2019-06-30 09:44:14.455  INFO 4272 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CONCEPT/concept:441c3d2e0d685e8ca73c66cfceef105a - registration status: 204
+2019-06-30 09:44:15.878  INFO 4272 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-30 09:49:14.121  INFO 4272 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-06-30 09:54:14.122  INFO 4272 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-06-30 09:59:14.125  INFO 4272 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-06-30 10:04:14.126  INFO 4272 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-06-30 10:09:14.127  INFO 4272 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-06-30 10:14:14.129  INFO 4272 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

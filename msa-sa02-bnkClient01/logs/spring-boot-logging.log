@@ -14166,3 +14166,170 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
  java.lang.Thread.run(Thread.java:748)
+2019-06-30 09:43:53.631  INFO 13400 --- [main] c.tyn.bnk.MsaSa02BnkClient01Application  : No active profile set, falling back to default profiles: default
+2019-06-30 09:43:54.829  INFO 13400 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-30 09:43:54.830  INFO 13400 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-06-30 09:43:55.011  INFO 13400 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-06-30 09:43:55.105  WARN 13400 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-06-30 09:43:55.105  INFO 13400 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-06-30 09:43:55.113  INFO 13400 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@54067fdc
+2019-06-30 09:43:56.356  WARN 13400 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-06-30 09:43:56.357  INFO 13400 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-06-30 09:43:57.070  INFO 13400 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-06-30 09:43:57.196  INFO 13400 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-06-30 09:43:57.197  INFO 13400 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-06-30 09:43:57.309  INFO 13400 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-06-30 09:43:57.310  INFO 13400 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-06-30 09:43:57.454  INFO 13400 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-06-30 09:43:57.656  INFO 13400 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-06-30 09:43:57.656  INFO 13400 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-06-30 09:43:57.656  INFO 13400 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-06-30 09:43:57.656  INFO 13400 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-06-30 09:43:57.656  INFO 13400 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-06-30 09:43:57.656  INFO 13400 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-06-30 09:43:57.656  INFO 13400 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-06-30 09:43:57.746  INFO 13400 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-06-30 09:43:57.748  INFO 13400 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2019-06-30 09:43:57.750  INFO 13400 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-06-30 09:43:57.753  INFO 13400 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1561855437752 with initial instances count: 0
+2019-06-30 09:43:57.757  INFO 13400 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1561855437757, current=UP, previous=STARTING]
+2019-06-30 09:43:57.758  WARN 13400 --- [main] c.n.discovery.InstanceInfoReplicator     : Ignoring onDemand update due to rate limiter
+2019-06-30 09:43:57.760  INFO 13400 --- [DiscoveryClient-InstanceInfoReplicator-0] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-06-30 09:43:57.796  INFO 13400 --- [main] c.tyn.bnk.MsaSa02BnkClient01Application  : Started MsaSa02BnkClient01Application in 5.367 seconds (JVM running for 6.132)
+2019-06-30 09:43:57.804  INFO 13400 --- [DiscoveryClient-InstanceInfoReplicator-0] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-06-30 09:43:57.826  INFO 13400 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HARANG/harang:4b02dde70505d8a5e60f00b8e740d361: registering service...
+2019-06-30 09:43:57.873  INFO 13400 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HARANG/harang:4b02dde70505d8a5e60f00b8e740d361 - registration status: 204
+2019-06-30 09:44:00.531  INFO 13400 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-30 09:44:27.750  INFO 13400 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-06-30 09:44:27.751  INFO 13400 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-06-30 09:44:27.751  INFO 13400 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-06-30 09:44:27.751  INFO 13400 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-06-30 09:44:27.751  INFO 13400 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-06-30 09:44:27.751  INFO 13400 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2019-06-30 09:44:27.751  INFO 13400 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-06-30 09:44:27.780  INFO 13400 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-06-30 09:48:57.660  INFO 13400 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-06-30 09:53:57.662  INFO 13400 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-06-30 09:58:57.664  INFO 13400 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-06-30 10:03:57.666  INFO 13400 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-06-30 10:08:57.667  INFO 13400 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-06-30 10:13:57.668  INFO 13400 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-06-30 10:46:01.695  INFO 14404 --- [main] c.tyn.bnk.MsaSa02BnkClient01Application  : No active profile set, falling back to default profiles: default
+2019-06-30 10:46:03.301  INFO 14404 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-30 10:46:03.302  INFO 14404 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-06-30 10:46:03.506  INFO 14404 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-06-30 10:46:03.605  WARN 14404 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-06-30 10:46:03.605  INFO 14404 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-06-30 10:46:03.615  INFO 14404 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@625a4ff
+2019-06-30 10:46:04.958  WARN 14404 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-06-30 10:46:04.959  INFO 14404 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-06-30 10:46:05.768  INFO 14404 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-06-30 10:46:05.911  INFO 14404 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-06-30 10:46:05.911  INFO 14404 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-06-30 10:46:06.008  INFO 14404 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-06-30 10:46:06.009  INFO 14404 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-06-30 10:46:06.157  INFO 14404 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-06-30 10:46:06.368  INFO 14404 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-06-30 10:46:06.369  INFO 14404 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-06-30 10:46:06.369  INFO 14404 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-06-30 10:46:06.369  INFO 14404 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-06-30 10:46:06.369  INFO 14404 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-06-30 10:46:06.369  INFO 14404 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-06-30 10:46:06.369  INFO 14404 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-06-30 10:46:06.459  INFO 14404 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-06-30 10:46:06.461  INFO 14404 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2019-06-30 10:46:06.463  INFO 14404 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-06-30 10:46:06.467  INFO 14404 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1561859166466 with initial instances count: 0
+2019-06-30 10:46:06.472  INFO 14404 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1561859166472, current=UP, previous=STARTING]
+2019-06-30 10:46:06.473  WARN 14404 --- [main] c.n.discovery.InstanceInfoReplicator     : Ignoring onDemand update due to rate limiter
+2019-06-30 10:46:06.476  INFO 14404 --- [DiscoveryClient-InstanceInfoReplicator-0] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-06-30 10:46:06.516  INFO 14404 --- [main] c.tyn.bnk.MsaSa02BnkClient01Application  : Started MsaSa02BnkClient01Application in 6.434 seconds (JVM running for 7.445)
+2019-06-30 10:46:06.521  INFO 14404 --- [DiscoveryClient-InstanceInfoReplicator-0] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-06-30 10:46:06.545  INFO 14404 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HARANG/harang:da36d4864c0e99547bb4f476ba1959d1: registering service...
+2019-06-30 10:46:06.594  INFO 14404 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HARANG/harang:da36d4864c0e99547bb4f476ba1959d1 - registration status: 204
+2019-06-30 10:46:36.462  INFO 14404 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-06-30 10:46:36.463  INFO 14404 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-06-30 10:46:36.463  INFO 14404 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-06-30 10:46:36.463  INFO 14404 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-06-30 10:46:36.463  INFO 14404 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-06-30 10:46:36.463  INFO 14404 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2019-06-30 10:46:36.463  INFO 14404 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-06-30 10:46:36.498  INFO 14404 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-06-30 10:46:53.869  INFO 14404 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-30 10:51:06.371  INFO 14404 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-06-30 10:52:36.700  WARN 14404 --- [RMI TCP Connection(16)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1561859556700, current=DOWN, previous=UP]
+2019-06-30 10:52:36.703  WARN 14404 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1561859556703, current=UP, previous=DOWN]
+2019-06-30 10:52:36.704  INFO 14404 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HARANG/harang:da36d4864c0e99547bb4f476ba1959d1: registering service...
+2019-06-30 10:52:36.711  INFO 14404 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HARANG/harang:da36d4864c0e99547bb4f476ba1959d1 - registration status: 204
+2019-06-30 10:52:36.720  INFO 14404 --- [RMI TCP Connection(16)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2019-06-30 10:52:36.723 ERROR 14404 --- [DiscoveryClient-InstanceInfoReplicator-0] s.c.c.d.h.DiscoveryClientHealthIndicator : Error
+
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaInstanceConfigBean': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:208) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1251) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolvePreparedArguments(ConstructorResolver.java:804) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:430) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$1(AbstractBeanFactory.java:356) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:389) ~[spring-cloud-context-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:186) ~[spring-cloud-context-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:353) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:35) ~[spring-aop-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:192) ~[spring-aop-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at com.sun.proxy.$Proxy104.getApplications(Unknown Source) ~[na:na]
+	at org.springframework.cloud.netflix.eureka.EurekaDiscoveryClient.getServices(EurekaDiscoveryClient.java:86) ~[spring-cloud-netflix-eureka-client-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.cloud.client.discovery.composite.CompositeDiscoveryClient.getServices(CompositeDiscoveryClient.java:67) ~[spring-cloud-commons-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.cloud.client.discovery.health.DiscoveryClientHealthIndicator.health(DiscoveryClientHealthIndicator.java:69) ~[spring-cloud-commons-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.cloud.client.discovery.health.DiscoveryCompositeHealthIndicator$Holder.health(DiscoveryCompositeHealthIndicator.java:67) [spring-cloud-commons-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.actuate.health.CompositeHealthIndicator.health(CompositeHealthIndicator.java:95) [spring-boot-actuator-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.cloud.netflix.eureka.EurekaHealthCheckHandler.getHealthStatus(EurekaHealthCheckHandler.java:110) [spring-cloud-netflix-eureka-client-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.cloud.netflix.eureka.EurekaHealthCheckHandler.getStatus(EurekaHealthCheckHandler.java:106) [spring-cloud-netflix-eureka-client-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at com.netflix.discovery.DiscoveryClient.refreshInstanceInfo(DiscoveryClient.java:1388) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:117) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) [eureka-client-1.9.8.jar:1.9.8]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_101]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_101]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_101]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_101]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_101]
+
+2019-06-30 10:52:36.743  INFO 14404 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HARANG/harang:da36d4864c0e99547bb4f476ba1959d1: registering service...
+2019-06-30 10:52:36.750  INFO 14404 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HARANG/harang:da36d4864c0e99547bb4f476ba1959d1 - registration status: 204
+2019-06-30 10:52:36.751  INFO 14404 --- [RMI TCP Connection(16)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2019-06-30 10:52:36.758  INFO 14404 --- [RMI TCP Connection(16)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HARANG/harang:da36d4864c0e99547bb4f476ba1959d1 - deregister  status: 200
+2019-06-30 10:52:36.767  INFO 14404 --- [RMI TCP Connection(16)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2019-06-30 10:52:36.767  INFO 14404 --- [RMI TCP Connection(16)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-06-30 10:52:36.776  INFO 14404 --- [RMI TCP Connection(16)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-06-30 10:52:36.962  INFO 14404 --- [RMI TCP Connection(16)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-06-30 10:52:36.964  INFO 14404 --- [RMI TCP Connection(16)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2019-06-30 10:52:36.967  WARN 14404 --- [RMI TCP Connection(16)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [RxIoScheduler-1 (Evictor)] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:745)
+2019-06-30 10:52:36.968  WARN 14404 --- [RMI TCP Connection(16)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [RxComputationScheduler-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:745)
