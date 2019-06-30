@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	<mapper namespace="com.multiDb.maria.repository.BookMapper">
+	
+	<select id="bookInfo" resultType="com.multiDb.domain.BookVo">
+		 select
+		 	 b_num
+		 	,m_id
+		 	,b_want
+		 	,b_regdate
+		 	,b_stock
+		 	,b_name
+		 	,b_writer
+		 	,b_pub
+		 	,b_content
+		 	,b_iscomplete
+		 	,b_photo
+		 from 
+		 	 tbl_book
+	</select>
+	
+	<select id="findUserInfo" resultType="com.multiDb.domain.harang.MemberDTO" parameterType="string">
+		 select
+			 m_id
+			,m_dept
+			,m_regdate
+			,m_pw
+			,m_grade
+			,m_name
+			,m_birth
+			,m_mail
+			,m_photo
+			,m_addr
+			,m_tel
+			,m_fee
+			,m_point
+			,m_age
+			,m_maxnum
+		 from 
+		 	 tbl_member
+		 where 
+		 	 m_id = #{m_id}
+	</select>
+
+	<select id="findUserAuth" resultType="string" parameterType="string">
+		select
+			authority
+		from
+			tbl_authorities
+		where 
+			m_id = #{m_id}
+	</select>
+
+</mapper>

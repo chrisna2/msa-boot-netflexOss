@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Cotent-Type" content="text/html; charset=UTF-8">
+<title>기업고객 조회</title>
+	<script src="/static/js/jquery-3.3.1.min.js"></script>
+	<script src="/static/js/jquery.toast.js"></script>
+    <link href="/static/css/bootstrap.css" rel="stylesheet" type="text/css">    
+    </head>
+    <body>  	
+		<br>
+		<table class="table table-bordered" style="width:1024px">
+			<tr>
+				<th>송신문자열</th>
+				<td><input type="text" id="to_test_string" name="to_test_string"></td>
+				<th>송신랜덤문자열</th>
+				<td><input type="text" id="to_random_string" name="to_random_string"></td>
+				<td><input type="button" id="srchText" value="검색"></td>
+			</tr>
+		</table>
+		<br>
+		<h4>검색결과</h4>
+		<br>
+		<h5 th:text="${result}"></h5>
+		<br>
+		<table class="table table-striped table-bordered table-hover" id="dataTable" style="width:1024px">
+			<thead>
+				<tr>
+					<th>PK</th>
+					<th>TO_TEST_STRING</th>
+					<th>TO_RANDOM_STRING</th>
+				</tr>
+			</thead>
+			<tbody id="srchResult">
+				<tr class="odd gradeX" th:each="board:${list}">
+					<td th:text="${board.pk}"></td>
+					<td th:text="${board.to_test_string}"></td>
+					<td th:text="${board.to_random_string}"></td>
+				</tr>	
+			</tbody>
+		</table>
+    </body>
+    <script type="text/javascript">
+    	$("#srchText").click(function(){
+    		$.getJSON("/boards/gridTest/srch",
+    				  {
+    					to_test_string:$("#to_test_string").val(),
+    			       	to_random_string:$("#to_random_string").val()
+    				  },
+    				  function(data){
+    					  $("#srchResult tr").remove();
+    					  $(data).each(function(index, list){9  
+    						  $("#srchResult").append(
+    		                             "<tr class='odd gradeX'>"
+    		                             +"<td>"+list.pk+"</td>"
+    		                             +"<td>"+list.to_test_string+"</td>"
+    		                             +"<td>"+list.to_random_string+"</td>"
+    		                             +"</tr>");
+    					  });
+    				  }
+    		);
+		});
+    </script>
+</html>

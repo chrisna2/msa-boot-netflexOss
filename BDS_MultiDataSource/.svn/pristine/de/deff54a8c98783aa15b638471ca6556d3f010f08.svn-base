@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Cotent-Type" content="text/html; charset=UTF-8">
+<title>기업고객 조회</title>
+	<script src="/static/js/jquery-3.3.1.min.js"></script>
+	<script src="/static/js/jquery.toast.js"></script>
+    <link href="/static/css/bootstrap.css" rel="stylesheet" type="text/css">    
+    </head>
+    <body>  	
+		<br>
+		<h4>TASK 실행전 정보</h4>
+		<br>
+		<form action="/board/taskIUD" method="post" id="runTask" name="runTask">
+		<input type="hidden" name="task_id" value="TASK00001">
+		<table class="table table-striped table-bordered table-hover" id="dataTable" style="width:1024px">
+			<thead>
+			</thead>
+			<tbody id="srchResult">
+				<tr class="odd gradeX">
+					<th>IDX</th>
+					<td> 
+						<input type="text" id="idx" name="idx" th:value="${vo.idx}">
+					</td>
+				</tr>
+				<tr class="odd gradeX">
+					<th>TEST_STRING</th>
+					<td> 
+						<input type="text" id="test_string" name="test_string" th:value="${vo.test_string}">
+					</td>
+				</tr>
+				<tr class="odd gradeX">
+					<th>RANDOM_STRING</th>
+					<td>
+						<input type="text" id="random_string" name="random_string" th:value="${vo.random_string}">
+					</td>
+				</tr>	
+				<tr class="odd gradeX">
+					<th colspan="2">
+						<input type="submit" value="TASK실행">
+					</th>
+				</tr>	
+			</tbody>
+		</table>
+		</form>
+    </body>
+    <script type="text/javascript">
+    </script>
+</html>

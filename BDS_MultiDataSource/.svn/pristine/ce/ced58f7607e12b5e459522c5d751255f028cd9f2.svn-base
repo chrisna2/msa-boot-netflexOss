@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	<mapper namespace="com.multiDb.postgres.repository.BdsTestMapper">
+
+	<select id="getTimeMapper" resultType="string">
+		select now()
+	</select>
+	
+	<select id="getTestTableList" resultType="com.multiDb.domain.TestTableVo">
+		 select
+		 	 a.idx
+		 	,a.test_string
+		 	,a.random_string
+		 	,b.test_date
+		 from 
+		 	 t a
+		 	,t2 b
+		 where 1 = 1
+		 and a.idx = b.idx
+	</select>
+	
+	<select id="getSrchList" resultType="com.multiDb.domain.TestTableVo" parameterType="com.multiDb.domain.TestTableVo">
+		<![CDATA[
+		select
+		 	 a.idx
+		 	,a.test_string
+		 	,a.random_string
+		 	,b.test_date
+		 from 
+		 	 t a
+		 	,t2 b
+		 where 1 = 1
+		 and a.idx = b.idx	
+		 ]]>
+		 <if test="test_string != null and test_string != ''">
+		 and a.test_string like concat('%', #{test_string}, '%')
+		 </if>
+		 <if test="test_date != null and test_date != ''">
+		 and b.test_date = #{test_date}
+		 </if>
+	</select>
+	
+	
+
+</mapper>

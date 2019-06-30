@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	<mapper namespace="com.multiDb.oracle.repository.EmpMapper">
+	
+	<select id="empInfo" resultType="com.multiDb.domain.EmpVo">
+		 select
+			 emp_no           
+			,emp_nm        
+			,dept_code     
+			,rol_position  
+			,join_date   
+			,retire_date  
+			,sal_type  
+			,month_sal   
+			,reg_date  
+		 from 
+			 tbl_emp
+	</select>
+
+</mapper>

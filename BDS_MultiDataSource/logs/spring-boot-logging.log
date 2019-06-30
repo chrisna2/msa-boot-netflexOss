@@ -1,0 +1,125 @@
+2019-06-27 10:01:44.098  INFO 13652 --- [restartedMain] c.multiDb.BdsMultiDataSourceApplication  : Starting BdsMultiDataSourceApplication on DESKTOP-LVR169M with PID 13652 (C:\Users\TY\Documents\SpringWorkspace\BDS_MultiDataSource\target\classes started by TY in C:\Users\TY\Documents\SpringWorkspace\BDS_MultiDataSource)
+2019-06-27 10:01:44.111  INFO 13652 --- [restartedMain] c.multiDb.BdsMultiDataSourceApplication  : No active profile set, falling back to default profiles: default
+2019-06-27 10:01:44.218  INFO 13652 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-06-27 10:01:44.218  INFO 13652 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-06-27 10:01:46.632  INFO 13652 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$e4f22a72] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-27 10:01:46.689  INFO 13652 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-06-27 10:01:47.303  INFO 13652 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-06-27 10:01:47.338  INFO 13652 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-27 10:01:47.338  INFO 13652 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-06-27 10:01:47.604  INFO 13652 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-06-27 10:01:47.604 DEBUG 13652 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-06-27 10:01:47.605  INFO 13652 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3386 ms
+2019-06-27 10:01:48.552  INFO 13652 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@37df70f5, org.springframework.security.web.context.SecurityContextPersistenceFilter@432333bb, org.springframework.security.web.header.HeaderWriterFilter@4e2544ec, org.springframework.security.web.csrf.CsrfFilter@52938e2c, org.springframework.security.web.authentication.logout.LogoutFilter@1974a3e0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@72493a3b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@768af3bc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5934c594, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@545ec7b0, org.springframework.security.web.session.SessionManagementFilter@72617b76, org.springframework.security.web.access.ExceptionTranslationFilter@6d79a568, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5f338679]
+2019-06-27 10:01:48.633 DEBUG 13652 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-06-27 10:01:48.763  INFO 13652 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-27 10:01:48.787 DEBUG 13652 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-06-27 10:01:48.880 DEBUG 13652 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2019-06-27 10:01:48.897 DEBUG 13652 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /static/**] in 'resourceHandlerMapping'
+2019-06-27 10:01:48.914 DEBUG 13652 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-06-27 10:01:49.002  INFO 13652 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-06-27 10:01:49.404  INFO 13652 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-06-27 10:01:49.500  INFO 13652 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-06-27 10:01:49.507  INFO 13652 --- [restartedMain] c.multiDb.BdsMultiDataSourceApplication  : Started BdsMultiDataSourceApplication in 6.012 seconds (JVM running for 7.848)
+2019-06-27 10:02:18.125  INFO 13652 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-27 10:02:18.126  INFO 13652 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-06-27 10:02:18.127 DEBUG 13652 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2019-06-27 10:02:18.141 DEBUG 13652 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-06-27 10:02:18.141  INFO 13652 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2019-06-27 10:02:18.196 DEBUG 13652 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2019-06-27 10:02:18.228 DEBUG 13652 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8]
+2019-06-27 10:02:18.838 DEBUG 13652 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-06-27 10:02:20.104 DEBUG 13652 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2019-06-27 10:02:20.108 DEBUG 13652 --- [http-nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8]
+2019-06-27 10:02:20.121 DEBUG 13652 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-06-27 10:02:21.986 DEBUG 13652 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={masked}
+2019-06-27 10:02:21.992 DEBUG 13652 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-27 10:02:22.045 DEBUG 13652 --- [http-nio-8080-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
+2019-06-27 10:02:22.056 DEBUG 13652 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 403
+2019-06-27 10:02:23.564 DEBUG 13652 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2019-06-27 10:02:23.567 DEBUG 13652 --- [http-nio-8080-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8]
+2019-06-27 10:02:23.577 DEBUG 13652 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-06-27 10:02:25.047 DEBUG 13652 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/board/taskList", parameters={}
+2019-06-27 10:02:25.048 DEBUG 13652 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public void com.multiDb.controller.BoardController.showTaskList(org.springframework.ui.Model)
+2019-06-27 10:02:25.090  INFO 13652 --- [http-nio-8080-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-06-27 10:02:25.645  INFO 13652 --- [http-nio-8080-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-06-27 10:02:25.835 DEBUG 13652 --- [http-nio-8080-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8]
+2019-06-27 10:02:26.107 DEBUG 13652 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-06-27 10:02:26.177 DEBUG 13652 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/static/js/jquery-3.3.1.min.js", parameters={}
+2019-06-27 10:02:26.181 DEBUG 13652 --- [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/static/", "/"]
+2019-06-27 10:02:26.216 DEBUG 13652 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-06-27 10:02:26.318 DEBUG 13652 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/static/css/bootstrap.css", parameters={}
+2019-06-27 10:02:26.320 DEBUG 13652 --- [http-nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/static/", "/"]
+2019-06-27 10:02:26.335 DEBUG 13652 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-06-27 10:02:26.413 DEBUG 13652 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/static/js/jquery.toast.js", parameters={}
+2019-06-27 10:02:26.417 DEBUG 13652 --- [http-nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/static/", "/"]
+2019-06-27 10:02:26.433 DEBUG 13652 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-06-27 10:03:42.437  INFO 13652 --- [Thread-8] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-27 10:03:42.439  INFO 13652 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-06-27 10:03:42.452  INFO 13652 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-06-27 10:03:43.422  INFO 13652 --- [restartedMain] c.multiDb.BdsMultiDataSourceApplication  : Starting BdsMultiDataSourceApplication on DESKTOP-LVR169M with PID 13652 (C:\Users\TY\Documents\SpringWorkspace\BDS_MultiDataSource\target\classes started by TY in C:\Users\TY\Documents\SpringWorkspace\BDS_MultiDataSource)
+2019-06-27 10:03:43.423  INFO 13652 --- [restartedMain] c.multiDb.BdsMultiDataSourceApplication  : No active profile set, falling back to default profiles: default
+2019-06-27 10:03:44.492  INFO 13652 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$e4f22a72] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-27 10:03:44.496  INFO 13652 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-06-27 10:03:44.861  INFO 13652 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-06-27 10:03:44.862  INFO 13652 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-27 10:03:44.863  INFO 13652 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-06-27 10:03:44.954  INFO 13652 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-06-27 10:03:44.954 DEBUG 13652 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-06-27 10:03:44.955  INFO 13652 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1527 ms
+2019-06-27 10:03:45.260  INFO 13652 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@35c4f6f, org.springframework.security.web.context.SecurityContextPersistenceFilter@6cdd1ac9, org.springframework.security.web.header.HeaderWriterFilter@376d79e9, org.springframework.security.web.csrf.CsrfFilter@35dd3e33, org.springframework.security.web.authentication.logout.LogoutFilter@3316954f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3aa03449, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@33ab4c0f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6fd5d9a2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@106595cd, org.springframework.security.web.session.SessionManagementFilter@302d8659, org.springframework.security.web.access.ExceptionTranslationFilter@1f780a2f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3bbfeba3]
+2019-06-27 10:03:45.307 DEBUG 13652 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-06-27 10:03:45.363  INFO 13652 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-27 10:03:45.368 DEBUG 13652 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-06-27 10:03:45.387 DEBUG 13652 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2019-06-27 10:03:45.397 DEBUG 13652 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /static/**] in 'resourceHandlerMapping'
+2019-06-27 10:03:45.406 DEBUG 13652 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-06-27 10:03:45.440  INFO 13652 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-06-27 10:03:45.735  INFO 13652 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-06-27 10:03:45.781  INFO 13652 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-06-27 10:03:45.785  INFO 13652 --- [restartedMain] c.multiDb.BdsMultiDataSourceApplication  : Started BdsMultiDataSourceApplication in 2.476 seconds (JVM running for 124.125)
+2019-06-27 10:03:45.790  INFO 13652 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-06-27 10:06:39.819  INFO 13652 --- [Thread-13] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-27 10:06:40.840  INFO 13652 --- [restartedMain] c.multiDb.BdsMultiDataSourceApplication  : Starting BdsMultiDataSourceApplication on DESKTOP-LVR169M with PID 13652 (C:\Users\TY\Documents\SpringWorkspace\BDS_MultiDataSource\target\classes started by TY in C:\Users\TY\Documents\SpringWorkspace\BDS_MultiDataSource)
+2019-06-27 10:06:40.841  INFO 13652 --- [restartedMain] c.multiDb.BdsMultiDataSourceApplication  : No active profile set, falling back to default profiles: default
+2019-06-27 10:06:42.022  INFO 13652 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$e4f22a72] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-27 10:06:42.025  INFO 13652 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-06-27 10:06:42.420  INFO 13652 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-06-27 10:06:42.422  INFO 13652 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-27 10:06:42.423  INFO 13652 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-06-27 10:06:42.541  INFO 13652 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-06-27 10:06:42.541 DEBUG 13652 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-06-27 10:06:42.541  INFO 13652 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1694 ms
+2019-06-27 10:06:42.820  INFO 13652 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2ee42e4f, org.springframework.security.web.context.SecurityContextPersistenceFilter@12e0133a, org.springframework.security.web.header.HeaderWriterFilter@2d8343ae, org.springframework.security.web.csrf.CsrfFilter@1d8b98cc, org.springframework.security.web.authentication.logout.LogoutFilter@13981042, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4dd0d7fe, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1208806d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@25213fb1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@424fd115, org.springframework.security.web.session.SessionManagementFilter@53ecbc73, org.springframework.security.web.access.ExceptionTranslationFilter@1b237962, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@a956b08]
+2019-06-27 10:06:42.863 DEBUG 13652 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-06-27 10:06:42.912  INFO 13652 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-27 10:06:42.919 DEBUG 13652 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-06-27 10:06:42.942 DEBUG 13652 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2019-06-27 10:06:42.952 DEBUG 13652 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /static/**] in 'resourceHandlerMapping'
+2019-06-27 10:06:42.964 DEBUG 13652 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-06-27 10:06:43.003  INFO 13652 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-06-27 10:06:43.324  INFO 13652 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-06-27 10:06:43.368  INFO 13652 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-06-27 10:06:43.368  INFO 13652 --- [restartedMain] c.multiDb.BdsMultiDataSourceApplication  : Started BdsMultiDataSourceApplication in 2.636 seconds (JVM running for 301.709)
+2019-06-27 10:06:43.372  INFO 13652 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-06-27 10:16:27.462  INFO 13652 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-27 10:16:27.464  INFO 13652 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-06-27 10:16:27.465 DEBUG 13652 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2019-06-27 10:16:27.471 DEBUG 13652 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-06-27 10:16:27.471  INFO 13652 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-06-27 10:16:27.473 DEBUG 13652 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2019-06-27 10:16:27.481 DEBUG 13652 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8]
+2019-06-27 10:16:27.515 DEBUG 13652 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-06-27 10:16:28.937 DEBUG 13652 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2019-06-27 10:16:28.942 DEBUG 13652 --- [http-nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8]
+2019-06-27 10:16:28.950 DEBUG 13652 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-06-27 10:16:38.553 DEBUG 13652 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/bookInfo", parameters={}
+2019-06-27 10:16:38.554 DEBUG 13652 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.util.List<com.multiDb.domain.BookVo> com.multiDb.controller.MultiDbController.bookInfo() throws java.lang.Exception
+2019-06-27 10:16:38.556  INFO 13652 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2019-06-27 10:16:38.616  INFO 13652 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2019-06-27 10:16:38.659 DEBUG 13652 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-06-27 10:16:38.660 DEBUG 13652 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [[BookVo(b_num=1, m_id=201705020, b_choice=null, b_want=5000, b_regdate=2019-04-08 15:06:44.0, b_stoc (truncated)...]
+2019-06-27 10:16:38.751 DEBUG 13652 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-06-27 10:16:40.597 DEBUG 13652 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2019-06-27 10:16:40.599 DEBUG 13652 --- [http-nio-8080-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8]
+2019-06-27 10:16:40.606 DEBUG 13652 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
